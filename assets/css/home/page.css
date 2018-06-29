@@ -1,0 +1,20 @@
+.order-column {
+  cursor: pointer; }
+  .order-column i {
+    white-space: pre; }
+
+.settings-columns-block {
+  height: 20rem;
+  border: 1px solid #ccc;
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+  box-shadow: 0 0 5px #ccc inset; }
+  .settings-columns-block li {
+    list-style: none;
+    border-bottom: 1px dotted #ccc;
+    margin: 0;
+    padding: 0.1rem 1rem;
+    cursor: move; }
+    .settings-columns-block li:hover {
+      background: rgba(241, 241, 241, 0.7); }

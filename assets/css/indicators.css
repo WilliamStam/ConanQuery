@@ -1,0 +1,36 @@
+.hover-data {
+  display: none; }
+
+#right-side #scorecard-area-side {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+
+#hover-area {
+  text-align: justify; }
+  #hover-area .scrollable section {
+    margin: 2rem 1rem 0 0; }
+    #hover-area .scrollable section:first-child {
+      margin-top: 1rem; }
+  #hover-area .scrollable h4 {
+    border-bottom: 1px dotted #d3d3d3;
+    padding-bottom: 0.2rem;
+    margin-bottom: 0.2rem; }
+  #hover-area .scrollable .info-block {
+    color: #838383; }
+
+.font-smaller h4 {
+  font-size: 130%;
+  font-weight: bold; }
+
+.font-smaller .formula-template {
+  font-family: monospace;
+  font-size: 1.2rem;
+  border-top: 1px solid #d3d3d3;
+  border-bottom: 1px solid #d3d3d3;
+  background: #fff;
+  padding: 0.5rem;
+  margin-top: 1rem; }
+  .font-smaller .formula-template abbr {
+    font-weight: bold; }

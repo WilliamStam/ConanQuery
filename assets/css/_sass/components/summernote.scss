@@ -1,0 +1,15 @@
+$summernote-font-path: "../fonts/summernote";
+
+@import "../../../vendor/summernote/summernote/dist/summernote-bs4.css";
+
+
+@font-face {
+  font-family: "summernote";
+  font-style: normal;
+  font-weight: normal;
+  src: url("#{$summernote-font-path}/summernote.eot?0d0d5fac99cc8774d89eb08b1a8323c4");
+  src: url("#{$summernote-font-path}/summernote.eot?#iefix") format("embedded-opentype"), url("#{$summernote-font-path}/summernote.woff?0d0d5fac99cc8774d89eb08b1a8323c4") format("woff"), url("#{$summernote-font-path}/summernote.ttf?0d0d5fac99cc8774d89eb08b1a8323c4") format("truetype")
+}
+.note-editor.note-frame {
+  border-color:$input-border-color;
+}

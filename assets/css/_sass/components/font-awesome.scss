@@ -1,0 +1,69 @@
+@import "./vendor/components/font-awesome/scss/variables";
+$fa-font-path: "../fonts/font-awesome";
+@import "./vendor/components/font-awesome/scss/mixins";
+@import "./vendor/components/font-awesome/scss/core";
+@import "./vendor/components/font-awesome/scss/larger";
+@import "./vendor/components/font-awesome/scss/fixed-width";
+@import "./vendor/components/font-awesome/scss/list";
+@import "./vendor/components/font-awesome/scss/bordered-pulled";
+@import "./vendor/components/font-awesome/scss/animated";
+@import "./vendor/components/font-awesome/scss/rotated-flipped";
+@import "./vendor/components/font-awesome/scss/stacked";
+@import "./vendor/components/font-awesome/scss/icons";
+@import "./vendor/components/font-awesome/scss/screen-reader";
+
+
+
+
+@font-face {
+  font-family: 'FontAwesome-Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url('#{$fa-font-path}/fa-regular-400.eot');
+  src: url('#{$fa-font-path}/fa-regular-400.eot?#iefix') format('embedded-opentype'),
+  url('#{$fa-font-path}/fa-regular-400.woff2') format('woff2'),
+  url('#{$fa-font-path}/fa-regular-400.woff') format('woff'),
+  url('#{$fa-font-path}/fa-regular-400.ttf') format('truetype'),
+  url('#{$fa-font-path}/fa-regular-400.svg#fontawesome') format('svg');
+}
+
+.far {
+  font-family: 'FontAwesome-Regular';
+  font-weight: 400;
+}
+
+
+@font-face {
+  font-family: 'FontAwesome';
+  font-style: normal;
+  font-weight: 900;
+  src: url('#{$fa-font-path}/fa-solid-900.eot');
+  src: url('#{$fa-font-path}/fa-solid-900.eot?#iefix') format('embedded-opentype'),
+  url('#{$fa-font-path}/fa-solid-900.woff2') format('woff2'),
+  url('#{$fa-font-path}/fa-solid-900.woff') format('woff'),
+  url('#{$fa-font-path}/fa-solid-900.ttf') format('truetype'),
+  url('#{$fa-font-path}/fa-solid-900.svg#fontawesome') format('svg');
+}
+
+.fa,
+.fas {
+  font-family: 'FontAwesome';
+  font-weight: 900;
+}
+
+
+@font-face {
+  font-family: 'FontAwesome-Brands';
+  font-style: normal;
+  font-weight: normal;
+  src: url('#{$fa-font-path}/fa-brands-400.eot');
+  src: url('#{$fa-font-path}/fa-brands-400.eot?#iefix') format('embedded-opentype'),
+  url('#{$fa-font-path}/fa-brands-400.woff2') format('woff2'),
+  url('#{$fa-font-path}/fa-brands-400.woff') format('woff'),
+  url('#{$fa-font-path}/fa-brands-400.ttf') format('truetype'),
+  url('#{$fa-font-path}/fa-brands-400.svg#fontawesome') format('svg');
+}
+
+.fab {
+  font-family: 'FontAwesome-Brands';
+}

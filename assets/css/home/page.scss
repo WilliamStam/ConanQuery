@@ -1,0 +1,28 @@
+@import "../_sass/variables";
+
+.order-column {
+  cursor: pointer;
+  i {
+	white-space: pre;
+  }
+}
+
+.settings-columns-block{
+  height:20rem;
+  border:1px solid #ccc;
+  overflow:auto;
+  margin:0;
+  padding:0;
+  box-shadow:0 0 5px #ccc inset;
+
+  li {
+	list-style:none;
+	border-bottom: 1px dotted #ccc;
+	margin:0;
+	padding:0.1rem 1rem;
+	cursor: move;
+	&:hover {
+	  background:rgba(241,241,241,0.7);
+	}
+  }
+}

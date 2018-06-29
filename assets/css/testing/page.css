@@ -1,0 +1,200 @@
+.bd-content > h1:not(:first-child),
+.bd-content > h2:not(:first-child),
+.bd-content > h3:not(:first-child) {
+  margin-top: 3rem; }
+
+h1 {
+  margin-top: 3rem; }
+
+h5 {
+  margin-top: 2rem;
+  border-bottom: 1px dotted #ccc; }
+
+.bd-example {
+  position: relative;
+  padding: 1rem;
+  margin: 1rem -1rem;
+  border: solid #f7f7f9;
+  border-width: .2rem 0 0; }
+
+.bd-example::after {
+  display: block;
+  content: "";
+  clear: both; }
+
+@media (min-width: 576px) {
+  .bd-example {
+    padding: 1.5rem;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    border-width: .2rem; } }
+
+.bd-example + p {
+  margin-top: 2rem; }
+
+.bd-example .pos-f-t {
+  position: relative;
+  margin: -1rem; }
+
+@media (min-width: 576px) {
+  .bd-example .pos-f-t {
+    margin: -1.5rem; } }
+
+.bd-example > .form-control + .form-control {
+  margin-top: .5rem; }
+
+.bd-example > .alert + .alert,
+.bd-example > .nav + .nav,
+.bd-example > .navbar + .navbar,
+.bd-example > .progress + .btn,
+.bd-example > .progress + .progress {
+  margin-top: 1rem; }
+
+.bd-example > .dropdown-menu:first-child {
+  position: static;
+  display: block; }
+
+.bd-example > .form-group:last-child {
+  margin-bottom: 0; }
+
+.bd-example > .close {
+  float: none; }
+
+.bd-example-type .table .type-info {
+  color: #999;
+  vertical-align: middle; }
+
+.bd-example-type .table td {
+  padding: 1rem 0;
+  border-color: #eee; }
+
+.bd-example-type .table tr:first-child td {
+  border-top: 0; }
+
+.bd-example-type h1,
+.bd-example-type h2,
+.bd-example-type h3,
+.bd-example-type h4,
+.bd-example-type h5,
+.bd-example-type h6 {
+  margin: 0; }
+
+.bd-example-bg-classes p {
+  padding: 1rem; }
+
+.bd-example > img + img {
+  margin-left: .5rem; }
+
+.bd-example > .btn-group {
+  margin-top: .25rem;
+  margin-bottom: .25rem; }
+
+.bd-example > .btn-toolbar + .btn-toolbar {
+  margin-top: .5rem; }
+
+.bd-example-control-sizing input[type=text] + input[type=text],
+.bd-example-control-sizing select {
+  margin-top: .5rem; }
+
+.bd-example-form .input-group {
+  margin-bottom: .5rem; }
+
+.bd-example > textarea.form-control {
+  resize: vertical; }
+
+.bd-example > .list-group {
+  max-width: 400px; }
+
+.bd-example .fixed-top,
+.bd-example .sticky-top {
+  position: static;
+  margin: -1rem -1rem 1rem; }
+
+.bd-example .fixed-bottom {
+  position: static;
+  margin: 1rem -1rem -1rem; }
+
+@media (min-width: 576px) {
+  .bd-example .fixed-top,
+  .bd-example .sticky-top {
+    margin: -1.5rem -1.5rem 1rem; }
+  .bd-example .fixed-bottom {
+    margin: 1rem -1.5rem -1.5rem; } }
+
+.bd-example .pagination {
+  margin-top: .5rem;
+  margin-bottom: .5rem; }
+
+.bd-example-modal {
+  background-color: #fafafa; }
+
+.bd-example-modal .modal {
+  position: relative;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  left: auto;
+  z-index: 1;
+  display: block; }
+
+.bd-example-modal .modal-dialog {
+  left: auto;
+  margin-right: auto;
+  margin-left: auto; }
+
+.bd-example-tabs .nav-tabs {
+  margin-bottom: 1rem; }
+
+.bd-example-tooltips {
+  text-align: center; }
+
+.bd-example-tooltips > .btn {
+  margin-top: .25rem;
+  margin-bottom: .25rem; }
+
+.bd-example-popover-static {
+  padding-bottom: 1.5rem;
+  background-color: #f9f9f9; }
+
+.bd-example-popover-static .popover {
+  position: relative;
+  display: block;
+  float: left;
+  width: 260px;
+  margin: 1.25rem; }
+
+.bd-example-tooltip-static .tooltip {
+  position: relative;
+  display: inline-block;
+  margin: 10px 20px;
+  opacity: 1; }
+
+.scrollspy-example {
+  position: relative;
+  height: 200px;
+  margin-top: .5rem;
+  overflow: auto; }
+
+.bd-example > .bg-danger:not(.navbar),
+.bd-example > .bg-faded:not(.navbar),
+.bd-example > .bg-info:not(.navbar),
+.bd-example > .bg-inverse:not(.navbar),
+.bd-example > .bg-primary:not(.navbar),
+.bd-example > .bg-success:not(.navbar),
+.bd-example > .bg-warning:not(.navbar) {
+  padding: .5rem;
+  margin-top: .5rem;
+  margin-bottom: .5rem; }
+
+.bd-example-border-utils [class^=border-] {
+  display: inline-block;
+  width: 6rem;
+  height: 6rem;
+  margin: .25rem;
+  background-color: #f5f5f5;
+  border: 1px solid; }
+
+.bd-example .carousel-inner img {
+  width: 100%;
+  height: 400px; }

@@ -1,0 +1,58 @@
+#page-content {
+  #toolbar-area {
+	margin: 0 0 0.5rem 0;
+	#toolbar {
+
+	  margin: 0;
+	  nav {
+		border:1px solid $gray-300;
+		color:$gray-400;
+		background: #fff;
+		padding: 0.3rem;
+		margin: 0;
+		border-radius: 0;
+	  }
+
+	  .dropdown-menu {
+		box-shadow: 0 0 5px rgba(200, 200, 200, 0.5);
+	  }
+
+	  .open-settings-area, .refresh {
+		&:hover {
+		  color: #444444;
+		}
+	  }
+	  &.fixed-top {
+		nav {
+		  margin-left:2rem;
+		}
+	  }
+
+	}
+  }
+
+  #form-bar-area {
+	bottom:1rem;
+	margin: 0 0 0.5rem 0;
+	#form-bar {
+
+	  margin: 0;
+	  nav {
+		border:1px solid $gray-300;
+		color:$gray-400;
+		background: #fff;
+		padding: 0.3rem;
+		margin: 0;
+		border-radius: 0;
+	  }
+
+		nav {
+		  margin-left:2rem;
+		}
+
+	}
+  }
+
+}
+
+

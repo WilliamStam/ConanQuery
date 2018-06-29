@@ -1,0 +1,166 @@
+.table-cards {
+
+  thead {
+	th {
+
+	}
+	tr {
+	  &:not(.table-card-header) {
+		td,th {
+		  border-color: transparent;
+		}
+	  }
+	  &.table-card-header {
+		td, th {
+		  border-left-color: transparent;
+		  border-right-color: transparent;
+		}
+
+	  }
+	}
+  }
+  tbody {
+	tr {
+	  td,th {
+		&:first-child {
+		  border-left: $table-border-width solid $table-border-color;
+		}
+		&:last-child {
+		  border-right: $table-border-width solid $table-border-color;
+		}
+	  }
+	  &:first-child {
+		td,th {
+		  //border:1px solid #000;
+		}
+
+	  }
+	}
+  }
+
+
+}
+
+
+.table-cards {
+  thead {
+	th {
+	  padding-top:4rem;
+	  h1,h2,h3 {
+		margin:0;
+		padding:0;
+	  }
+
+	}
+
+	.table-card-header {
+	  th {
+		padding-top:1.5rem;
+	  }
+	}
+
+	&:first-child {
+	  th {
+		padding-top:0;
+	  }
+	}
+  }
+  tbody {
+	td {
+	  color:$body-color
+	}
+	tr {
+	  &.active {
+		td {
+		  font-style: italic;
+		  //   background-color:#d6eaf8;
+		}
+	  }
+	}
+  }
+}
+
+
+
+table.records {
+  thead {
+	td {
+	  h2 {
+		font-size:1.5rem;
+		margin-top:1rem;
+		margin-bottom:0;
+	  }
+	  h3 {
+		font-size:1.2rem;
+		margin-top:1rem;
+		margin-bottom:0;
+	  }
+	}
+	th {
+	  color: $table-dark-color;
+	  background-color: $table-dark-bg;
+	  border-right:$table-border-width solid lighten($table-dark-border-color, 7.5%);
+
+	  font-weight: 400;
+	  text-align: center;
+	  vertical-align: middle;
+	  -ms-touch-action: manipulation;
+	  touch-action: manipulation;
+	  cursor: pointer;
+	  background-image: none;
+	  border: 1px solid transparent;
+
+	  white-space: nowrap;
+	  -webkit-user-select: none;
+	  -moz-user-select: none;
+	  -ms-user-select: none;
+	  user-select: none;
+	  color: #333;
+	  background-color: #fff;
+	  border-color: #eaeaea;
+	  padding: 1px 5px;
+	  font-size: 0.8rem;
+	  line-height: 1.5;
+	  color: #a6a6a6;
+	  i.fa {
+		margin-left:2px;
+	  }
+	  &:hover {
+		color: #333;
+		background-color: #e6e6e6;
+	  }
+
+
+	}
+	tr {
+	  th:first-child {
+		border-left:$table-border-width solid $table-border-color;
+	  }
+	}
+  }
+  tbody {
+	background:#fff;
+	td {
+	  border-right:$table-border-width solid $table-border-color
+	}
+	tr {
+	  td:first-child {
+		border-left:$table-border-width solid $table-border-color;
+	  }
+	  &:last-child {
+		td {
+		  border-bottom: $table-border-width solid $table-border-color;
+		}
+	  }
+
+	  &.record {
+		cursor:pointer;
+		&:hover {
+		  //background: #7eccc3;
+		}
+	  }
+	}
+
+  }
+}
+

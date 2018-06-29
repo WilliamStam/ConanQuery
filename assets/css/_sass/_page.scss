@@ -1,0 +1,78 @@
+body {
+  font-size:14px;
+  color:#444;
+
+}
+#page-content {
+margin-bottom:1.5rem;
+  #content-header {
+    @extend .jumbotron;
+    margin:0.5rem 0;
+    border:1px solid $gray-300;
+    color:$gray-400;
+    background: #fff;
+    padding:1rem;
+    font-size:3rem;
+  }
+
+}
+
+.fixed-column {
+
+    top:3.1rem;
+    bottom:1.5rem;
+
+  .scrollable {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow-y: auto;
+  }
+}
+#main-progress-area.fixed-column {
+  &.fade-in {
+
+
+    opacity:1;
+
+  }
+}
+
+#main-progress-area {
+
+  width:2rem;
+
+  opacity:0;
+
+  .progress {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    height:100%;
+    .progress-bar {
+      width:100%;
+      bottom:0;
+      position: absolute;
+      left:0;
+      right:0;
+
+      flex-direction: column;
+      justify-content: start;
+
+      div {
+        font-size:1.5rem;
+        margin-top:-2rem;
+
+      }
+
+
+
+
+
+    }
+  }
+}
