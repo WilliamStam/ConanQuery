@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "791a66a0e055700fc906592a9c2ddce9",
+    "content-hash": "2987f8c68106584480c22fb9d2824e6b",
     "packages": [
         {
             "name": "bcosca/fatfree-core",
@@ -362,6 +362,54 @@
             "time": "2016-11-11T18:43:20+00:00"
         },
         {
+            "name": "robloach/component-installer",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/RobLoach/component-installer.git",
+                "reference": "cf4ec3219b3e93dbfb10cc22c6604c6c764ce4aa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/RobLoach/component-installer/zipball/cf4ec3219b3e93dbfb10cc22c6604c6c764ce4aa",
+                "reference": "cf4ec3219b3e93dbfb10cc22c6604c6c764ce4aa",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0",
+                "kriswallsmith/assetic": "1.*",
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "composer/composer": "~1.1.2",
+                "phpunit/phpunit": "~5.4.6"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                },
+                "class": "ComponentInstaller\\ComponentInstallerPlugin"
+            },
+            "autoload": {
+                "psr-0": {
+                    "ComponentInstaller": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Rob Loach",
+                    "homepage": "http://robloach.net"
+                }
+            ],
+            "description": "Allows installation of Components via Composer.",
+            "time": "2018-05-14T07:51:05+00:00"
+        },
+        {
             "name": "symfony/polyfill-ctype",
             "version": "dev-master",
             "source": {
@@ -526,45 +574,6 @@
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
             "time": "2018-05-30T04:24:30+00:00"
-        },
-        {
-            "name": "thedudeguy/rcon",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/thedudeguy/PHP-Minecraft-Rcon.git",
-                "reference": "ed462086494919de5759c573dbbedc652e99cea5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/thedudeguy/PHP-Minecraft-Rcon/zipball/ed462086494919de5759c573dbbedc652e99cea5",
-                "reference": "ed462086494919de5759c573dbbedc652e99cea5",
-                "shasum": ""
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Thedudeguy\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Chris Churchwell",
-                    "email": "chris@chrischurchwell.com",
-                    "homepage": "http://chrischurchwell.com"
-                }
-            ],
-            "description": "Simple Rcon class for php.",
-            "homepage": "https://github.com/thedudeguy/PHP-Minecraft-Rcon",
-            "keywords": [
-                "minecraft",
-                "rcon"
-            ],
-            "time": "2017-09-22T13:28:33+00:00"
         },
         {
             "name": "timrwood/moment",
@@ -802,6 +811,58 @@
                 "templating"
             ],
             "time": "2018-06-25T15:02:58+00:00"
+        },
+        {
+            "name": "xpaw/php-source-query-class",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/xPaw/PHP-Source-Query.git",
+                "reference": "f713415696d61cdd36639124fa573406360d8219"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/xPaw/PHP-Source-Query/zipball/f713415696d61cdd36639124fa573406360d8219",
+                "reference": "f713415696d61cdd36639124fa573406360d8219",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5"
+            },
+            "require-dev": {
+                "codeclimate/php-test-reporter": "dev-master",
+                "phpunit/phpunit": "^6.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "xPaw\\SourceQuery\\": "SourceQuery/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-2.1"
+            ],
+            "authors": [
+                {
+                    "name": "Pavel Djundik",
+                    "email": "sourcequery@xpaw.me"
+                }
+            ],
+            "description": "PHP library to query and send RCON commands to servers based on \"Source Engine Query\" protocol",
+            "homepage": "https://github.com/xPaw/PHP-Source-Query",
+            "keywords": [
+                "ark",
+                "counter-strike",
+                "csgo",
+                "gmod",
+                "minecraft",
+                "rcon",
+                "rust",
+                "starbound",
+                "team fortress"
+            ],
+            "time": "2018-03-19T19:10:59+00:00"
         }
     ],
     "packages-dev": [],
@@ -813,7 +874,7 @@
         "components/toastr": 20,
         "components/hideseek": 20,
         "tracy/tracy": 20,
-        "thedudeguy/rcon": 20
+        "xpaw/php-source-query-class": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
