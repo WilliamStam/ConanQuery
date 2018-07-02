@@ -38,9 +38,35 @@ class home extends \controllers\_ {
 
             $Query->SetRconPassword( SQ_PASSWORD );
 
-            debug($Query->Rcon("sql Select  (g.name) as GUILD,  (c.char_name) as NAME,  'TeleportPlayer '||ap.x||' '||ap.y||' '||ap.z as LOCATION, ap.x, ap.y, ap.y, datetime(c.lastTimeOnline, 'unixepoch') as LASTONLINE from characters as c  left outer join guilds as g on g.guildid = c.guild
-  left outer join actor_position as ap on ap.id = c.id where  lastTimeOnline > strftime('%s', 'now', '-5 minute') order by   g.name,   c.rank desc,   c.level desc,   c.char_name;"));
-            debug($Query->Rcon( 'listplayers' ));
+
+            $sql = "
+SELECT  
+	'' AS num,
+	(c.char_name) AS NAME,  
+	(SELECT name FROM guilds WHERE guilds.guildId = c.guild) AS GUILD,
+	(c.guild) AS GUILDID,  
+	('TeleportPlayer '||ap.x||' '||ap.y||' '||ap.z) AS LOCATION, 
+	(ap.x), 
+	(ap.y), 
+	(ap.y), 
+	(datetime(c.lastTimeOnline, 'unixepoch')) AS LASTONLINE 
+FROM 
+	characters AS c  
+  		LEFT OUTER JOIN actor_position AS ap ON ap.id = c.id 
+WHERE 
+	lastTimeOnline > strftime('%s', 'now', '-5 minutes'); 
+  ";
+
+            $query = $Query->Rcon("sql {$sql}");
+
+
+            $query = $this->QueryParser($query);
+
+
+
+
+            debug($query);
+            //debug($Query->Rcon( 'listplayers' ));
             //var_dump( $Query->Rcon( 'say hello' ) );
         } catch( Exception $e ) {
             echo $e->getMessage( );
@@ -66,5 +92,35 @@ class home extends \controllers\_ {
 		$return['time'] = $timer->_stop('Controllers - PAGE');
 		return $this->f3->OUTPUT['RESPONSE'] = $return;
 	}
+
+	function QueryParser($data){
+		$d = array();
+		$data = explode("\n",$data);
+		$columns = array_shift($data);
+		$cols = array();
+		foreach (explode("|",$columns) as $item_c){
+			$cols[] = trim($item_c);
+		}
+		array_pop($cols);
+		$columns = $cols;
+
+
+
+		$i = 0;
+		foreach ($data as $item){
+			$c = array();
+			$cl=0;
+			foreach (explode("|",$item) as $item_c){
+				$c[$columns[$cl++]] = trim($item_c);
+			}
+
+
+			array_pop($c);
+
+			$d[] = $c;
+		}
+		return $d;
+	}
+
 
 }
